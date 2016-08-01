@@ -25,7 +25,8 @@
 }
 
 @media only screen and (max-width: 480px) {
-	ul li { width: 120px; }
+	#photo img { height: 200px;}
+	ul li { width: 100%; }
 	#w { margin: 0 20px; }
 }
 
@@ -35,5 +36,5 @@
 
 /** iPhone only **/
 @media screen and (max-device-width: 480px) {
-	ul li { width: 150px; }
+	ul li { width: 100% }
 }
