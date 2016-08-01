@@ -1,80 +1,134 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" media="screen" href="css/screen.css"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Mayur Kode - Resume</title>
+  <meta name="author" content="Jake Rocheleau">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Simonetta:400,900|Balthazar">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+ 
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
+  
 
-<title>Responsive Site</title>
 </head>
+
 <body>
-
-	<div id="page">
+	<div id="w" itemscope itemtype="http://schema.org/Person">
+		<header class="clearfix">
+			<div id="info">			
+				<h1><span itemprop="name">Mayur Kode</span></h1>
+				<h3><span itemprop="jobTitle">Computer Engineer &amp; Web Developer</span></h3>
+				<small itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				  <span itemprop="addressLocality">Elphinston</span>, 
+				  <span itemprop="addressRegion">Mumbai</span>, 
+				  <span itemprop="addressCountry">India</span>
+				</small>
+				<small><span itemprop="email">mayurkode7@gmail.com</span></small>
+				<!--<small><a href="" itemprop="url">My Portfolio</a> &bull; <a href="http://twitter.com/jakerocheleau" itemprop="url">@jakerocheleau</a></small>
+			--></div>
+			
+			<div id="photo">
+				<img src="mayur.jpg" alt="Mayur Kode resume photo avatar" itemprop="image" />
+			</div>
+		</header>
 		
-		<header>
+		<section id="profile">
+			<h2>My History &amp; Profile</h2>
+			<p itemprop="description">
+				Experienced IT professional with over 4 years of development experience in leading web UI development technologies.
+				I have worked for market leaders like <b>Infosys Technologies Ltd.</b> and currently serving as <b>IT Analyst fot Tata Consultancy Servicest Pvt. Ltd.</b>
+			    I am passionate about different UI development techonlogies and certified jQuery developer.
+			</p>
 			
-			<a href="#" title="logo" class="logo"> <span> Your Logo </span></a>
-		
-		</header>	
-
-		<section class="intro">
 			
-			<h1>Welcome</h1>
-			
-			<p> Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-		
-		
-		</section>
-		<section class="promos">
-			
-			<article class="promo promo1">
-			
-				<h2>Promo Heading here</h2>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a href="#" title="visit our blog"> visit our blog</a>
-				
-			</article>
-			
-			<article class="promo promo2">
-			
-				<h2>Promo Heading here</h2>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a href="#" title="read the article"> read the article</a>
-				
-			</article>
-			
-			<article class="promo promo3">
-			
-				<h2>Promo Heading here</h2>
-				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-				<a href="#" title="learn more"> learn more <span></span></a>
-				
-			</article>
-		
-		
 		</section>
 		
-		<nav> 
+		<section id="skills" class="clearfix" itemscope itemtype="http://schema.org/ItemList">
+			<h2 itemprop="name">Skillset</h2>
+			<section id="skills-left">
+				<h4 itemprop="about">Development</h4>
+				<ul>
+					<li itemprop="itemListElement">HTML5/CSS3</li>
+					<li itemprop="itemListElement">JavaScript</li>
+					<li itemprop="itemListElement">jQuery</li>
+					<li itemprop="itemListElement">jQuery UI</li>
+					<li itemprop="itemListElement">Bootstrap</li>
+					<li itemprop="itemListElement">AngularJS</li>
+					<li itemprop="itemListElement">Handlebars.js: JavaScript templating solution</li>
+					<li itemprop="itemListElement">Skeleton: Responsive CSS Framework</li>
+					
+				</ul>
+			</section>
 			
-			<ul>
-				
-				<li> <a href="#" title="about us "> About us</a></li>
-				<li> <a href="#" title="services  "> services </a></li>
-				<li> <a href="#" title="portfolio "> portfolio</a></li>
-				<li> <a href="#" title="contact us "> contact us</a></li>
-				
-			
-			</ul>
+			<section id="skills-right">
+				<h4 itemprop="about">Software</h4>
+				<ul>
+					<li itemprop="itemListElement">Eclipse IDE</li>
+					<li itemprop="itemListElement">Adobe Dreamweaver</li>
+					<li itemprop="itemListElement">SVN</li>
+				</ul>
+			</section>
+		</section>
 		
-		</nav>	
-			
-			
-		<footer>
-			
-			<p> @ Your Organization Name</p>
+		<section id="education">
+			<h2>Education</h2>
+			<p>Computer Engineer from K.J.Somaiya Vidyavihar, Mumbai University </p>
+		</section>
 		
-		</footer>	
-
+		<section id="experience">
+			<h2>Work Experience</h2>
+			<p>Systems Engineer at Infosys ~ 2011-2013</p>
+			<p>Senior Systems Engineer at Infosys ~ 2013-2014</p>
+			<p>IT Analyst at TCS ~ 2014-2016</p>
+			
+		</section>
+		
+		<section id="articles">
+			<h2> Certifications and Courses </h2>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="http://www.refsnesdata.no/certification/w3certified.asp?id=7834412" itemprop="url" title="jQuery Certification from w3schools.com">jQuery Certification from w3schools.com</a></span> &bull; Completed on <span itemprop="datePublished">July 2016</span></p>
+	
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/053290F1ABCC4757987C90D9CAB997E0" itemprop="url" title="Responsive Design Fundamentals">Responsive Design Fundamentals</a></span> &bull; Completed on <span itemprop="datePublished">July 2016</span></p>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/74FBE674ED804068AC74799E3F870CEA?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="jQuery Essential Training">jQuery Essential Training</a></span> &bull; Completed on <span itemprop="datePublished">July 2016</span></p>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/2F83A1C97FBC4C359B400E42F0F5DC15?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="Creating a Responsive Web Design">Creating a Responsive Web Design</a></span> &bull;  Completed on <span itemprop="datePublished">May 2016</span></p>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/5C07B75FCAE84938B6E35CEAE6CF07CD?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="Design the Web: Creating a Pull Quote with CSS">Design the Web: Creating a Pull Quote with CSS</a></span> &bull; Completed on <span itemprop="datePublished">Mar 2016</span></p>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/4E3659DC520247FD9CF12D1E16CA8B41?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="AngularJS 1: Form Validation">AngularJS 1: Form Validation</a></span> &bull; Completed on <span itemprop="datePublished">Feb 2016</span></p>
+			
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/405513925288462B842F20628A68C144?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="jQuery: Creating Plugins">jQuery: Creating Plugins</a></span> &bull; Completed on <span itemprop="datePublished">Apr 2015</span></p>
+	
+			<p itemscope itemtype="http://schema.org/Article">
+			<span itemprop="name">
+			<a href="https://www.lynda.com/ViewCertificate/96D7130123A44CFD8E7F0710A68B7365?utm_source=directlink&utm_medium=sharing&utm_campaign=certificate" itemprop="url" title="Up and Running with AngularJS 1">Up and Running with AngularJS 1</a></span> &bull; Completed on <span itemprop="datePublished">Apr 2015</span></p>
+	
+			
+	</section>
 	</div>
-
 </body>
 </html>
