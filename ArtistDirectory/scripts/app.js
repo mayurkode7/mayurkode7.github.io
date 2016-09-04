@@ -1,3 +1,5 @@
+
+window.scrollTo(0, 1);
 var myApp = angular.module("artistsDirectory",[
                                                 "ngRoute",
                                                 "artistsControllers"
