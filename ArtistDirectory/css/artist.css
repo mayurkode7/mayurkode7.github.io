@@ -341,3 +341,6 @@ a.small {
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
 }
+
+
+.copyright { color:#063642;}
