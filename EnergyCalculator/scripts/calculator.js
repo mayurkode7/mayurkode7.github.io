@@ -1,6 +1,6 @@
 var controllers = angular.module("controllers",[]);
 
-controllers.controller("mainController",function($scope){
+controllers.controller("mainController",function($scope,INC_CONVERSION,HAL_CONVERSION,CFL_CONVERSION,LED_CONVERSION){
 
 	$scope.lumens = [375,600,900,1125,1600];
 	$scope.current_lumens = 600;
@@ -8,17 +8,14 @@ controllers.controller("mainController",function($scope){
 	$scope.current_hours = 4;
 	$scope.total_days = 365;
 	
-	$scope.inc_conversion = 0.0625;
-	$scope.hal_conversion = 0.0450;
-	$scope.cfl_conversion = 0.0146;
-	$scope.led_conversion = 0.0125;
+
 	
 	$scope.calculate = function(){
 		
-		$scope.inc_wattage = ($scope.current_lumens * $scope.inc_conversion).toFixed(1);
-		$scope.hal_wattage = ($scope.current_lumens * $scope.hal_conversion).toFixed(1);
-		$scope.cfl_wattage = ($scope.current_lumens * $scope.cfl_conversion).toFixed(1);
-		$scope.led_wattage = ($scope.current_lumens * $scope.led_conversion).toFixed(1);
+		$scope.inc_wattage = ($scope.current_lumens * INC_CONVERSION).toFixed(1);
+		$scope.hal_wattage = ($scope.current_lumens * HAL_CONVERSION).toFixed(1);
+		$scope.cfl_wattage = ($scope.current_lumens * CFL_CONVERSION).toFixed(1);
+		$scope.led_wattage = ($scope.current_lumens * LED_CONVERSION).toFixed(1);
 		
 		if($scope.current_hours > 24 ) { $scope.current_hours = 24;}
 		
@@ -43,6 +40,13 @@ controllers.controller("mainController",function($scope){
 
 
 var app = angular.module("myCalculator",["controllers"]);
+
+
+app.constant("INC_CONVERSION",0.0625);
+app.constant("HAL_CONVERSION",0.0450);
+app.constant("CFL_CONVERSION",0.0146);
+app.constant("LED_CONVERSION",0.0125);
+
 
 app.run(function($rootScope){
 	
