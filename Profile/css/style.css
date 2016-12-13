@@ -1,0 +1,97 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
+/*table of content 
+
+1. general rules
+2. intro 
+3. contact
+4. skills
+5. languages
+6. hobbies
+7. experiences
+8. education
+9. media queries
+
+*/
+
+/* 1. general rules */
+body{font-family:'Open Sans', Arial, Tahoma;font-weight:400;font-size:1em;color:#363636;background:#ededed;}
+h1{font-weight: 700; font-size: 1.2em;}
+h2{color:#EC7263;font-size:1.8em;font-weight:700;text-transform:uppercase;margin-bottom:20px; cursor: default;}
+h2:BEFORE{content:'//';margin-right:5px;}
+p{font-size:1.3em;line-height:1.5em;}
+ul{margin:0;padding:0;list-style:none;}
+.container{background:white;margin-top:80px;margin-bottom:20px;}
+em {font-weight: 700; font-size: 1.3em; text-transform: capitalize;}
+.callout{position:relative;top:0;left:0;display:block;padding:10px;}
+.callout.right{margin-left:10px;}
+.callout.right::before{position:absolute;top:30%;left:-10px;width:0;height:0;margin-top:-10px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:10px solid #eee;content:'';}
+
+/* intro */
+.intro{text-align:center;line-height:12px;text-transform:uppercase;font-weight:700;font-size:2.4em;padding-bottom:20px;border-bottom:1px double #ccc;border-width:3px;}
+.intro .title{text-transform:capitalize; font-size: 0.8em; color: #777; line-height: 1.2}
+.avatar{width:150px;margin-top:-50px;}
+
+
+/* contact */
+ul.contact-details { position: relative; margin-bottom: 20px;}
+ul.contact-details li i{padding-right:10px;border-right:1px solid #aaa;border-bottom:1px solid #aaa;padding:10px;display:inline-block;width:45px;height:45px;opacity:0.2;}
+ul.contact-details li span{font-weight:bold;font-size:1.6em;text-transform:capitalize; position: absolute; padding: 10px; padding-top: 3px;}
+ul.contact-details li a { position: absolute; padding-left: 10px; padding-top: 24px}
+ul.contact-details a{font-size:1.2em;}
+ul.contact-details .fa-phone + span { padding-top: 10px}
+
+/* skills */
+.skill{width:10px;height:30px;background:#F0563D;color:white;margin-bottom:10px;text-transform:uppercase;padding:5px;font-size:1.4em;font-weight:bolder;}
+.skill-20{width:20%;}
+.skill-40{width:40%;}
+.skill-60{width:60%;}
+.skill-80{width:80%;}
+.skill-100{width:100%;}
+.legend{margin-bottom:40px;}
+.legend div{display:inline-block;width:24%;border-bottom:2px solid #ccc;border-left:2px solid #ccc;height:10px;}
+.legend div:LAST-CHILD{border-right:2px solid #ccc;}
+.legend div label{padding-top:10px;float:right;color:#a9a9a9;font-size:1.2em;}
+.legend:AFTER{display:block;content:'';clear:both;}
+
+/* languages */
+.languages{list-style:none;}
+.languages li{padding:10px;font-size:1.3em;border-bottom:1px solid #ccc; text-transform: capitalize;}
+.rating{background:url("../images/star-grey.png") no-repeat;height:14px;width:111px;float:right;}
+.four-star{background:url("../images/star-red.png") no-repeat;width:80%;height:14px;}
+.three-star{background:url("../images/star-red.png") no-repeat;width:60%;height:14px;}
+.two-star{background:url("../images/star-red.png") no-repeat;width:40%;height:14px;}
+.one-star{background:url("../images/star-red.png") no-repeat;width:20%;height:14px;}
+.five-star{background:url("../images/star-red.png") no-repeat;width:100%;height:14px;}
+.languages:AFTER{display:block;content:'';clear:both;}
+
+/* hobbies */
+.hobbies{height:30px;margin-bottom:20px;}
+.hobby{background:#A75265;padding:10px 10px 10px 10px;margin:0 10px 10px 0;;color:white;font-size:1.2em;text-transform:capitalize;cursor:default; display: inline-block; float: left;}
+.hobbies:AFTER { display: block;content: ''; clear: both;}
+ 
+/* experiences */
+.experiences .company{width:25%;float:left;padding:0 10px 10px 10px;}
+.experiences .company label{font-size:1.4em;}
+.experiences label{font-size:1.8em;text-transform:capitalize;}
+.experiences .description{display:inline-block;width:75%;float:left;padding:0 10px 10px 10px;}
+.client { border-bottom:  1px solid #A75265; margin-bottom: 20px;}
+.client strong { color: #A75265; text-transform: capitalize; font-size: 1.1em;}
+.client ul { list-style: disc;  margin-bottom: 10px; margin-left: 20px; }
+.client ul li { padding: 10px 10px 10px 0; font-size: 1.3em; color:#A75265; cursor: default;}
+.client ul li span {color: black;}
+.client em {font-weight: 700; font-size: 1em;}
+
+/* education */
+.education {position:relative;}
+.education .timeline{position:absolute;width:5px;border:2px solid #EC7263;top:0px;left:20px;z-index:1; height: 100%; background: #EC7263}
+.education .year{float:left; width:10% ;font-size:1.4em;font-weight:bold;padding:10px;z-index:10;position:relative;background:white;margin-top:0px;}
+.education .description{float:left;background:#eee;padding:10px;margin-bottom:15px;border-color:#eee; width: 85%}
+.education .description h3{font-weight:bold;font-size:1.6em;padding:0;margin:0;line-height:25px;text-transform:capitalize;}
+.education:AFTER{clear:both;content:'';display:block;}
+
+
+@media screen and (max-width: 767px) {
+ .education .year{ width: 17%;}
+ .education .description { width: 80%; }
+}
