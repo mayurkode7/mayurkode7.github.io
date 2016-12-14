@@ -71,10 +71,10 @@ ul.contact-details .fa-phone + span { padding-top: 10px}
 .hobbies:AFTER { display: block;content: ''; clear: both;}
  
 /* experiences */
-.experiences .company{width:25%;float:left;padding:0 10px 10px 10px;}
+.experiences .company{padding:0 10px 10px 10px;}
 .experiences .company label{font-size:1.4em;}
 .experiences label{font-size:1.8em;text-transform:capitalize;}
-.experiences .description{display:inline-block;width:75%;float:left;padding:0 10px 10px 10px;}
+.experiences .description{display:inline-block;padding:0 10px 10px 10px;}
 .client { border-bottom:  1px solid #A75265; margin-bottom: 20px;}
 .client strong { color: #A75265; text-transform: capitalize; font-size: 1.1em;}
 .client ul { list-style: disc;  margin-bottom: 10px; margin-left: 20px; }
@@ -93,5 +93,5 @@ ul.contact-details .fa-phone + span { padding-top: 10px}
 
 @media screen and (max-width: 767px) {
  .education .year{ width: 17%;}
- .education .description { width: 80%; }
+ .education .description { width: 77%; }
 }
